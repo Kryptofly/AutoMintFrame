@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoMintFrame</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AutoMintFrame</h1>
+        <form id="mint-form">
+            <input type="text" id="mint-title" placeholder="Enter mint title" required>
+            <input type="url" id="mint-image" placeholder="Enter image URL" required>
+            <textarea id="mint-description" placeholder="Enter description" required></textarea>
+            <button type="submit">Generate and Post</button>
+        </form>
+        <div id="frame-container" class="hidden">
+            <h2>Mint Frame</h2>
+            <img id="frame-image" src="" alt="Mint Image">
+            <h3 id="frame-title"></h3>
+            <p id="frame-description"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
